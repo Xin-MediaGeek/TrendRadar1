@@ -118,12 +118,8 @@ rss:
     - id: "ruanyifeng"
       name: "阮一峰的网络日志"
       url: "http://www.ruanyifeng.com/blog/atom.xml"
-      enabled: false                  # 禁用
-      # max_age_days: 3               # 示例：推送 3 天内的文章（更新较慢的博客）
-     
-    - id: "yahoo-finance"
-      name: "雅虎财经"
-      url: "https://finance.yahoo.com/news/rssindex"
+      enabled: false
+
 
     # 自定义源示例
     # - id: "custom-feed"
@@ -257,9 +253,9 @@ display:
   regions:
     ai_analysis: true # AI 分析区域
     new_items: true # 新增热点区域（含热榜新增 + RSS 新增）
-    hotlist: true # 热榜区域（关键词匹配 / AI 智能筛选）
-    rss: true # RSS 订阅区域
-    standalone: false # 独立展示区（完整热榜/RSS，不受关键词过滤）
+    hotlist: false # 热榜区域（关键词匹配 / AI 智能筛选）
+    rss: false # RSS 订阅区域
+    standalone: true # 独立展示区（完整热榜/RSS，不受关键词过滤）
   standalone:
     platforms: ["zhihu","github"] # 热榜平台 ID 列表（如 ["zhihu", "weibo"]）
     rss_feeds: ["hacker-news"] # RSS 源 ID 列表（如 ["hacker-news"]）
