@@ -257,9 +257,9 @@ display:
     rss: false # RSS 订阅区域
     standalone: true # 独立展示区（完整热榜/RSS，不受关键词过滤）
   standalone:
-    platforms: ["zhihu","github"] # 热榜平台 ID 列表（如 ["zhihu", "weibo"]）
+    platforms: ["zhihu","github","v2ex","ithome","jin10"] # 热榜平台 ID 列表（如 ["zhihu", "weibo"]）
     rss_feeds: ["hacker-news"] # RSS 源 ID 列表（如 ["hacker-news"]）
-    max_items: 20                     # 每个源最多展示条数（0=不限制）
+    max_items: 10                     # 每个源最多展示条数（0=不限制）
 
 
 # ===============================================================
